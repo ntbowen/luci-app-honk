@@ -71,3 +71,6 @@ msgstr "設定"
 
 msgid "Refresh"
 msgstr "重新整理"
+
+msgid "Open the management UI"
+msgstr "開啟管理介面"

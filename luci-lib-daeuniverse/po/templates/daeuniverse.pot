@@ -88,3 +88,7 @@ msgstr ""
 #: htdocs/luci-static/resources/daeuniverse/service.js:447
 msgid "dae and honk cannot run at the same time; enabling %s turns %s off."
 msgstr ""
+
+#: htdocs/luci-static/resources/daeuniverse/service.js
+msgid "Open the management UI"
+msgstr ""

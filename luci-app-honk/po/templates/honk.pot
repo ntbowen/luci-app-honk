@@ -1,0 +1,610 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Configuration wizard"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Fill in the fields and generate the complete configuration file. Anything the wizard does not cover stays editable on the Configuration tab."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Global"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "WAN interface"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Interface of the default route; \"auto\" follows it"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "LAN interface"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "LAN device(s) to hook, comma separated"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Log level"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Dial mode"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "How outbound connections resolve domains"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "TPROXY port"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Sniffing timeout"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Allow insecure"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Skip TLS certificate verification upstream"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Auto kernel parameters"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "NFQUEUE"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Hold ambiguous LAN UDP first packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "MPTCP"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Check interval"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Check tolerance"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "TCP check URL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "TCP check method"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "UDP check DNS"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Bootstrap resolver"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Used before any DNS upstream is up"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Nodes and subscriptions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "One per line. Bare share links get generated tags; keep \"tag: 'url'\" lines as typed."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Nodes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Share links: ss://, vmess://, vless://, trojan://, hysteria2://, socks5://, ..."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Subscriptions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Subscription URLs, one per line"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Outbound group"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Name"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Policy"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "fixed uses the first node; the others pick by latency or order"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Filter"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Empty selects all nodes; e.g. subtag(mysub), name(keyword: x)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Fallback group"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Used when no node survives the health check"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "DNS upstreams"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Presets plus custom \"name: url\" lines."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Answered through the outbound group"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "name: 'url' or name: 'url' -> detour"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Custom upstreams"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Request rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "qname/qtype/sip rules, one per line"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Request fallback"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "An upstream name, asis or reject"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Response rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "upstream()/ip()/qname() rules, one per line"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Response fallback"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "accept, reject or an upstream name"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Routing"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Router DNS bypass"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Management UI bypass"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Local proxy tools bypass"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Private addresses direct"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "China domains direct"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "China IPs direct"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Custom rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Additional rules, one per line"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Fallback"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Where unmatched traffic goes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "APIs"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Clash API controller"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Empty disables the Clash-compatible API"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Management UI listen"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "IP:port for the embedded doona UI"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Password login"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Recommended when listening beyond loopback"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Anonymous loopback"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Only valid on a loopback listen address"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Persist runtime state"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Generate and save"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Data directory"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Runtime state root; restart required"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Log file"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Empty logs to syslog only; relative paths resolve under data_dir"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Store subscriptions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Persist last subscription bodies for boot recovery"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "SO_MARK"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Socket mark for self-originated sockets; empty keeps 0x100"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "TLS implementation"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "utls enables Chrome-oriented ClientHello mimicry"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Preconnect nodes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "'auto' warms up to eight TCP nodes at boot; 0 disables"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "UDP warm nodes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Per-group reusable UDP leaves to prewarm; 0 disables"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Max concurrent dials"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Cap on physical proxy connections per generation"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Fixed index"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Member index used when policy is fixed"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Additional groups"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Extra \"name { filter/policy/final }\" blocks, kept verbatim"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "DNS listener"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Optional unauthenticated resolver address; firewall it! Empty disables"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Hosts sources"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "One per line: \"true\" for /etc/hosts or an OxiDNS rules file path"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Client subnet"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "EDNS subnet preset: IPv4, CIDR, 'auto' or 'auto(IPv4)'"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "IP version prefer"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "4/6 prefer a family with fallback; 0 keeps both"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Optimistic cache"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Read and write positive and negative cache"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Cache TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Positive answers: fixed seconds; 0 keeps answer TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Stale reply TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Serve-stale TTL in seconds; 0 keeps wire TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Max cache size"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Entry cap, clamped to 100000"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Fixed domain TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "\"domain: seconds\" lines; 0 disables caching that name"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Clash secret"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Bearer token for the Clash API"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Clash external UI"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Dashboard directory served by the Clash API"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Clash default mode"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Management UI enabled"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Management secret"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Static bearer token; exclusive with password login"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Allowed origins"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Comma separated quoted origins, e.g. 'https://panel.example'"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Allowed hosts"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Comma separated quoted Host values for reverse proxies"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Record flows"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Record traffic"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Record memory"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Record logs"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Record DNS log"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Config write"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Allow the API to replace config files; needs auth"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Cache DNS state"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Assets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Download defaults for geodata, the external UI and subscriptions."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Default route"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "routing, direct or a group name for downloads"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Geosite URL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Geoip URL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Geodata route"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Overrides the default route for geodata fetches"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "External UI URL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Dashboard ZIP source"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "External UI route"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Group or node tag used to fetch the dashboard"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Subscription UA"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "User-Agent for subscription requests"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Subscription interval"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Default refresh interval; 0 disables"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Subscription cache"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Local dnsmasq"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "AliDNS"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Google DNS"
+msgstr ""

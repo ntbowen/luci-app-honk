@@ -21,6 +21,10 @@
  *   validate       [ command, args ] that take the entry file and exit non-zero
  *                  on a broken configuration, or null
  *   logIdent       RegExp matching the start of the service's log messages
+ *   webui          { port, path } of the embedded management UI, or null; the
+ *                  port found in the native_api.listen setting wins over the
+ *                  fallback here
+ *   extraPanes     function on the view returning extra tab pane nodes
  */
 
 const callServiceList = rpc.declare({
@@ -172,6 +176,21 @@ function collectFiles(entry, readText) {
 	};
 
 	return visit(entry).then(() => files);
+}
+
+/* Re-reads the entry file and everything it includes after an outside change
+   (e.g. a generated configuration) and refreshes the editors. */
+function refreshFiles(view) {
+	return collectFiles(view.entry, readFromDisk).then(files => view.setFiles(files));
+}
+
+/* The embedded UI is served by the native API: take the port from the current
+   configuration so the button follows a changed listen address. */
+function webuiPort(view) {
+	const file = (view.files ?? []).find(f => f.path === view.entry);
+	const text = file?.editor?.textarea.value ?? file?.text ?? '';
+	const m = /native_api\s*\{[^}]*?listen\s*:\s*'[^']*?:(\d+)'/.exec(text);
+	return m ? +m[1] : (view.app.webui?.port ?? 9527);
 }
 
 /* null for a missing file; any other error (permission, size) is raised, as
@@ -413,6 +432,15 @@ const ServiceView = view.extend({
 				E('p', _('Saved, but the service could not be reloaded: %s').format(err.message)), 'warning'));
 	},
 
+	refresh() {
+		return refreshFiles(this);
+	},
+
+	openWebui() {
+		window.open(location.protocol + '//' + location.hostname + ':' + webuiPort(this)
+			+ (this.app.webui?.path ?? '/ui/'), '_blank');
+	},
+
 	/* Status and log */
 
 	updateStatus() {
@@ -478,6 +506,13 @@ const ServiceView = view.extend({
 		};
 
 		return m.render().then(mapNode => {
+			const statusParts = [ mapNode ];
+			if (this.app.webui)
+				statusParts.push(E('div', { 'class': 'cbi-section' }, E('button', {
+					'class': 'btn cbi-button cbi-button-apply',
+					'click': ui.createHandlerFn(this, 'openWebui')
+				}, _('Open the management UI'))));
+
 			const logPane = E('div', { 'data-tab': 'log', 'data-tab-title': _('Log') }, [
 				E('div', { 'class': 'cbi-section' }, [
 					E('div', { 'class': 'right' }, E('button', {
@@ -489,7 +524,8 @@ const ServiceView = view.extend({
 			]);
 
 			const panes = E('div', { 'class': 'du-panes' }, [
-				E('div', { 'data-tab': 'status', 'data-tab-title': _('Service status') }, [ mapNode ]),
+				E('div', { 'data-tab': 'status', 'data-tab-title': _('Service status') }, statusParts),
+				...(this.app.extraPanes?.call(this) ?? []),
 				E('div', { 'data-tab': 'config', 'data-tab-title': _('Configuration') }, [
 					E('div', { 'class': 'cbi-section' }, [
 						E('p', { 'class': 'cbi-section-descr' },

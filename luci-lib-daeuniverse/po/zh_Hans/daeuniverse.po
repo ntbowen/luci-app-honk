@@ -71,3 +71,6 @@ msgstr "配置"
 
 msgid "Refresh"
 msgstr "刷新"
+
+msgid "Open the management UI"
+msgstr "打开管理界面"

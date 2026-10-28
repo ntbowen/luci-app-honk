@@ -1,0 +1,463 @@
+msgid ""
+msgstr ""
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Configuration wizard"
+msgstr "配置向导"
+
+msgid "Fill in the fields and generate the complete configuration file. Anything the wizard does not cover stays editable on the Configuration tab."
+msgstr "填写下列字段并生成完整配置文件。向导未覆盖的内容仍可在「配置」页签中直接编辑。"
+
+msgid "Global"
+msgstr "全局"
+
+msgid "WAN interface"
+msgstr "WAN 接口"
+
+msgid "Interface of the default route; \"auto\" follows it"
+msgstr "默认路由所在接口；auto 自动跟随"
+
+msgid "LAN interface"
+msgstr "LAN 接口"
+
+msgid "LAN device(s) to hook, comma separated"
+msgstr "要接管的 LAN 设备，逗号分隔"
+
+msgid "Log level"
+msgstr "日志级别"
+
+msgid "Dial mode"
+msgstr "拨号模式"
+
+msgid "How outbound connections resolve domains"
+msgstr "出站连接如何解析域名"
+
+msgid "TPROXY port"
+msgstr "TPROXY 端口"
+
+msgid "Sniffing timeout"
+msgstr "嗅探超时"
+
+msgid "Allow insecure"
+msgstr "允许不安全连接"
+
+msgid "Skip TLS certificate verification upstream"
+msgstr "跳过上游 TLS 证书校验"
+
+msgid "Auto kernel parameters"
+msgstr "自动配置内核参数"
+
+msgid "NFQUEUE"
+msgstr "NFQUEUE"
+
+msgid "Hold ambiguous LAN UDP first packets"
+msgstr "通过 NFQUEUE 暂存不明确的 LAN UDP 首包"
+
+msgid "MPTCP"
+msgstr "MPTCP"
+
+msgid "Check interval"
+msgstr "健康检查间隔"
+
+msgid "Check tolerance"
+msgstr "健康检查容差"
+
+msgid "TCP check URL"
+msgstr "TCP 检查 URL"
+
+msgid "TCP check method"
+msgstr "TCP 检查方法"
+
+msgid "UDP check DNS"
+msgstr "UDP 检查 DNS"
+
+msgid "Bootstrap resolver"
+msgstr "引导解析器"
+
+msgid "Used before any DNS upstream is up"
+msgstr "在 DNS 上游就绪前使用"
+
+msgid "Nodes and subscriptions"
+msgstr "节点与订阅"
+
+msgid "One per line. Bare share links get generated tags; keep \"tag: 'url'\" lines as typed."
+msgstr "每行一条。裸分享链接会自动生成标签；形如 tag: 'url' 的行保持原样。"
+
+msgid "Nodes"
+msgstr "节点"
+
+msgid "Share links: ss://, vmess://, vless://, trojan://, hysteria2://, socks5://, ..."
+msgstr "分享链接：ss://、vmess://、vless://、trojan://、hysteria2://、socks5:// 等"
+
+msgid "Subscriptions"
+msgstr "订阅"
+
+msgid "Subscription URLs, one per line"
+msgstr "订阅地址，每行一条"
+
+msgid "Outbound group"
+msgstr "出站分组"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Policy"
+msgstr "策略"
+
+msgid "fixed uses the first node; the others pick by latency or order"
+msgstr "fixed 固定使用第一个节点；其余按延迟或顺序选择"
+
+msgid "Filter"
+msgstr "过滤器"
+
+msgid "Empty selects all nodes; e.g. subtag(mysub), name(keyword: x)"
+msgstr "留空选择全部节点；如 subtag(mysub)、name(keyword: x)"
+
+msgid "Fallback group"
+msgstr "回退分组"
+
+msgid "Used when no node survives the health check"
+msgstr "无存活节点时使用"
+
+msgid "DNS upstreams"
+msgstr "DNS 上游"
+
+msgid "Presets plus custom \"name: url\" lines."
+msgstr "勾选预设项，或在下方添加 name: url 自定义行。"
+
+msgid "Answered through the outbound group"
+msgstr "经出站分组应答"
+
+msgid "name: 'url' or name: 'url' -> detour"
+msgstr "name: 'url' 或 name: 'url' -> detour"
+
+msgid "Custom upstreams"
+msgstr "自定义上游"
+
+msgid "Request rules"
+msgstr "请求规则"
+
+msgid "qname/qtype/sip rules, one per line"
+msgstr "qname/qtype/sip 规则，每行一条"
+
+msgid "Request fallback"
+msgstr "请求回退"
+
+msgid "An upstream name, asis or reject"
+msgstr "上游名称、asis 或 reject"
+
+msgid "Response rules"
+msgstr "响应规则"
+
+msgid "upstream()/ip()/qname() rules, one per line"
+msgstr "upstream()/ip()/qname() 规则，每行一条"
+
+msgid "Response fallback"
+msgstr "响应回退"
+
+msgid "accept, reject or an upstream name"
+msgstr "accept、reject 或上游名称"
+
+msgid "Routing"
+msgstr "路由"
+
+msgid "Router DNS bypass"
+msgstr "路由器 DNS 直连"
+
+msgid "Management UI bypass"
+msgstr "管理界面直连"
+
+msgid "Local proxy tools bypass"
+msgstr "本机代理工具直连"
+
+msgid "Private addresses direct"
+msgstr "私有地址直连"
+
+msgid "China domains direct"
+msgstr "国内域名直连"
+
+msgid "China IPs direct"
+msgstr "国内 IP 直连"
+
+msgid "Custom rules"
+msgstr "自定义规则"
+
+msgid "Additional rules, one per line"
+msgstr "附加规则，每行一条"
+
+msgid "Fallback"
+msgstr "回退"
+
+msgid "Where unmatched traffic goes"
+msgstr "未匹配流量的去向"
+
+msgid "APIs"
+msgstr "接口"
+
+msgid "Clash API controller"
+msgstr "Clash API 监听"
+
+msgid "Empty disables the Clash-compatible API"
+msgstr "留空则关闭 Clash 兼容 API"
+
+msgid "Management UI listen"
+msgstr "管理界面监听"
+
+msgid "IP:port for the embedded doona UI"
+msgstr "内嵌 doona UI 的 IP:端口"
+
+msgid "Password login"
+msgstr "密码登录"
+
+msgid "Recommended when listening beyond loopback"
+msgstr "监听地址超出 loopback 时建议开启"
+
+msgid "Anonymous loopback"
+msgstr "loopback 匿名访问"
+
+msgid "Only valid on a loopback listen address"
+msgstr "仅当监听地址为 loopback 时有效"
+
+msgid "Persist runtime state"
+msgstr "持久化运行时状态"
+
+msgid "Generate and save"
+msgstr "生成并保存"
+
+msgid "Data directory"
+msgstr "数据目录"
+
+msgid "Runtime state root; restart required"
+msgstr "运行时状态根目录，修改后需重启"
+
+msgid "Log file"
+msgstr "日志文件"
+
+msgid "Empty logs to syslog only; relative paths resolve under data_dir"
+msgstr "留空只写 syslog；相对路径解析到 data_dir 下"
+
+msgid "Store subscriptions"
+msgstr "持久化订阅"
+
+msgid "Persist last subscription bodies for boot recovery"
+msgstr "保存最近订阅正文供启动恢复"
+
+msgid "SO_MARK"
+msgstr "SO_MARK"
+
+msgid "Socket mark for self-originated sockets; empty keeps 0x100"
+msgstr "本机发起套接字的 mark；留空保持 0x100"
+
+msgid "TLS implementation"
+msgstr "TLS 实现"
+
+msgid "utls enables Chrome-oriented ClientHello mimicry"
+msgstr "utls 启用面向 Chrome 的 ClientHello 模拟"
+
+msgid "Preconnect nodes"
+msgstr "预热连接节点数"
+
+msgid "'auto' warms up to eight TCP nodes at boot; 0 disables"
+msgstr "'auto' 启动时最多预热八个 TCP 节点；0 关闭"
+
+msgid "UDP warm nodes"
+msgstr "UDP 预热节点数"
+
+msgid "Per-group reusable UDP leaves to prewarm; 0 disables"
+msgstr "每组预热的可复用 UDP 节点；0 关闭"
+
+msgid "Max concurrent dials"
+msgstr "最大并发拨号"
+
+msgid "Cap on physical proxy connections per generation"
+msgstr "每个配置代的物理代理连接上限"
+
+msgid "Fixed index"
+msgstr "固定下标"
+
+msgid "Member index used when policy is fixed"
+msgstr "policy 为 fixed 时使用的成员下标"
+
+msgid "Additional groups"
+msgstr "附加分组"
+
+msgid "Extra \"name { filter/policy/final }\" blocks, kept verbatim"
+msgstr "额外的 name { filter/policy/final } 块，原样写入"
+
+msgid "DNS listener"
+msgstr "DNS 监听"
+
+msgid "Optional unauthenticated resolver address; firewall it! Empty disables"
+msgstr "可选的无认证解析监听，务必用防火墙限制来源；留空关闭"
+
+msgid "Hosts sources"
+msgstr "Hosts 来源"
+
+msgid "One per line: \"true\" for /etc/hosts or an OxiDNS rules file path"
+msgstr "每行一条：true 表示 /etc/hosts，或 OxiDNS 规则文件路径"
+
+msgid "Client subnet"
+msgstr "客户端子网"
+
+msgid "EDNS subnet preset: IPv4, CIDR, 'auto' or 'auto(IPv4)'"
+msgstr "EDNS 子网预设：IPv4、CIDR、'auto' 或 'auto(IPv4)'"
+
+msgid "IP version prefer"
+msgstr "IP 版本偏好"
+
+msgid "4/6 prefer a family with fallback; 0 keeps both"
+msgstr "4/6 偏好对应协议族并保留回退；0 双栈"
+
+msgid "Optimistic cache"
+msgstr "乐观缓存"
+
+msgid "Read and write positive and negative cache"
+msgstr "读写正、负缓存"
+
+msgid "Cache TTL"
+msgstr "缓存 TTL"
+
+msgid "Positive answers: fixed seconds; 0 keeps answer TTL"
+msgstr "正应答固定秒数；0 保留应答 TTL"
+
+msgid "Stale reply TTL"
+msgstr "过期应答 TTL"
+
+msgid "Serve-stale TTL in seconds; 0 keeps wire TTL"
+msgstr "过期应答服务 TTL 秒数；0 保留报文 TTL"
+
+msgid "Max cache size"
+msgstr "缓存上限"
+
+msgid "Entry cap, clamped to 100000"
+msgstr "条目上限，最大钳制到 100000"
+
+msgid "Fixed domain TTL"
+msgstr "固定域名 TTL"
+
+msgid "\"domain: seconds\" lines; 0 disables caching that name"
+msgstr "每行 \"域名: 秒数\"；0 禁止缓存该域名"
+
+msgid "Clash secret"
+msgstr "Clash 密钥"
+
+msgid "Bearer token for the Clash API"
+msgstr "Clash API 的 bearer 凭证"
+
+msgid "Clash external UI"
+msgstr "Clash 外部面板"
+
+msgid "Dashboard directory served by the Clash API"
+msgstr "Clash API 托管的 dashboard 目录"
+
+msgid "Clash default mode"
+msgstr "Clash 默认模式"
+
+msgid "Management UI enabled"
+msgstr "启用管理界面"
+
+msgid "Management secret"
+msgstr "管理密钥"
+
+msgid "Static bearer token; exclusive with password login"
+msgstr "静态 bearer 凭证；与密码登录互斥"
+
+msgid "Allowed origins"
+msgstr "允许的 Origin"
+
+msgid "Comma separated quoted origins, e.g. 'https://panel.example'"
+msgstr "逗号分隔的加引号 Origin，如 'https://panel.example'"
+
+msgid "Allowed hosts"
+msgstr "允许的 Host"
+
+msgid "Comma separated quoted Host values for reverse proxies"
+msgstr "逗号分隔的加引号 Host 值，用于反向代理"
+
+msgid "Record flows"
+msgstr "记录流量流"
+
+msgid "Record traffic"
+msgstr "记录流量历史"
+
+msgid "Record memory"
+msgstr "记录内存历史"
+
+msgid "Record logs"
+msgstr "记录日志"
+
+msgid "Record DNS log"
+msgstr "记录 DNS 日志"
+
+msgid "Config write"
+msgstr "允许 API 写配置"
+
+msgid "Allow the API to replace config files; needs auth"
+msgstr "允许 API 替换配置文件；要求启用认证"
+
+msgid "Cache DNS state"
+msgstr "缓存 DNS 状态"
+
+msgid "Assets"
+msgstr "资源下载"
+
+msgid "Download defaults for geodata, the external UI and subscriptions."
+msgstr "geodata、外部 UI 与订阅的下载默认值。"
+
+msgid "Default route"
+msgstr "默认出口"
+
+msgid "routing, direct or a group name for downloads"
+msgstr "下载出口：routing、direct 或分组名"
+
+msgid "Geosite URL"
+msgstr "Geosite 地址"
+
+msgid "Geoip URL"
+msgstr "Geoip 地址"
+
+msgid "Geodata route"
+msgstr "Geodata 出口"
+
+msgid "Overrides the default route for geodata fetches"
+msgstr "覆盖 geodata 下载的默认出口"
+
+msgid "External UI URL"
+msgstr "外部 UI 地址"
+
+msgid "Dashboard ZIP source"
+msgstr "Dashboard ZIP 下载源"
+
+msgid "External UI route"
+msgstr "外部 UI 出口"
+
+msgid "Group or node tag used to fetch the dashboard"
+msgstr "下载 dashboard 使用的分组或节点 tag"
+
+msgid "Subscription UA"
+msgstr "订阅 UA"
+
+msgid "User-Agent for subscription requests"
+msgstr "订阅请求的 User-Agent"
+
+msgid "Subscription interval"
+msgstr "订阅刷新间隔"
+
+msgid "Default refresh interval; 0 disables"
+msgstr "默认定期刷新间隔；0 关闭"
+
+msgid "Subscription cache"
+msgstr "订阅缓存"
+
+msgid "Local dnsmasq"
+msgstr "本地 dnsmasq"
+
+msgid "AliDNS"
+msgstr "阿里 DNS"
+
+msgid "Google DNS"
+msgstr "谷歌 DNS"
