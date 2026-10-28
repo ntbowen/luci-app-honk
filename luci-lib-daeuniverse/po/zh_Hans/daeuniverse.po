@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "(new)"
+msgstr "（新文件）"
+
+msgid "Configuration file"
+msgstr "配置文件"
+
+msgid "Configuration is invalid, the service was not reloaded"
+msgstr "配置有误，服务未重新加载"
+
+msgid "Unable to read %s: %s"
+msgstr "无法读取 %s：%s"
+
+msgid "dae and honk cannot run at the same time; enabling %s turns %s off."
+msgstr "dae 和 honk 不能同时运行，启用 %s 会关闭 %s。"
+
+msgid "Edit the configuration file and every file it includes; each tab is saved to its own file."
+msgstr "编辑配置文件及其 include 的所有文件，每个标签页保存到各自的文件。"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Log"
+msgstr "日志"
+
+msgid "Must be a file in %s"
+msgstr "必须是 %s 中的文件"
+
+msgid "No log entries."
+msgstr "暂无日志。"
+
+msgid "Not running"
+msgstr "未运行"
+
+msgid "Re-read includes"
+msgstr "重新解析 include"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Save files"
+msgstr "保存文件"
+
+msgid "Saved"
+msgstr "已保存"
+
+msgid "Saved, but the service could not be reloaded: %s"
+msgstr "已保存，但无法重新加载服务：%s"
+
+msgid "Saved, the service is reloading"
+msgstr "已保存，服务正在重新加载"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Unable to save: %s"
+msgstr "保存失败：%s"
+
+msgid "Service status"
+msgstr "服务状态"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "Refresh"
+msgstr "刷新"
