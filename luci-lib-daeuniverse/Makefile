@@ -16,6 +16,8 @@ PKG_LICENSE:=GPL-3.0-or-later
 LUCI_TITLE:=Shared LuCI page for dae and honk
 LUCI_DEPENDS:=+luci-base
 LUCI_PKGARCH:=all
+# jsmin strips '//' inside string literals; keep sources verbatim.
+LUCI_MINIFY_JS:=0
 
 include $(TOPDIR)/feeds/luci/luci.mk
 

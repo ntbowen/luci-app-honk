@@ -15,6 +15,8 @@ PKG_LICENSE:=GPL-3.0-or-later
 LUCI_TITLE:=LuCI support for honk
 LUCI_DEPENDS:=+luci-lib-daeuniverse +honk
 LUCI_PKGARCH:=all
+# jsmin strips '//' inside string literals; URLs in the wizard would break.
+LUCI_MINIFY_JS:=0
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
