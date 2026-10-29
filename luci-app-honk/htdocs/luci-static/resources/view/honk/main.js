@@ -211,10 +211,13 @@ return service.View.extend({
 
 		/* Group */
 		w.groupName = input(gName || 'proxy');
-		const polM = /^(\w+)(?:\((\d+)\))?/.exec(kv(gInner, 'policy') ?? 'min_moving_avg');
-		w.groupPolicy = select(polM?.[1] ?? 'min_moving_avg',
-			[ 'min_moving_avg', 'fixed', 'min_delay', 'random', 'roundrobin', 'select' ]);
+		const polM = /^(\w+)(?:\((\d+)\))?/.exec(kv(gInner, 'policy') ?? 'select');
+		const policies = [ 'select', 'fixed', 'urltest', 'loadbalance', 'fallback', 'score' ];
+		if (polM?.[1] && !policies.includes(polM[1]))
+			policies.unshift(polM[1]);
+		w.groupPolicy = select(polM?.[1] ?? 'select', policies);
 		w.groupFixedIndex = input(polM?.[2] ?? '0');
+		w.groupInterrupt = checkbox(isTrue(kv(gInner, 'interrupt_connections')));
 		// No filter selects every node; subtag() matches subscription tags.
 		w.groupFilter = input(kv(gInner, 'filter') ?? '');
 		w.groupFinal = input(kv(gInner, 'final') ?? '');
@@ -351,8 +354,9 @@ return service.View.extend({
 
 			section(_('Outbound group'), null, [
 				row(_('Name'), w.groupName),
-				row(_('Policy'), w.groupPolicy, _('fixed uses the first node; the others pick by latency or order')),
+				row(_('Policy'), w.groupPolicy, _('select is manual; urltest lowest latency; loadbalance rotates; fallback first alive; score by quality')),
 				row(_('Fixed index'), w.groupFixedIndex, _('Member index used when policy is fixed')),
+				row(_('Interrupt connections'), w.groupInterrupt, _('Close existing connections when the selection changes')),
 				row(_('Filter'), w.groupFilter, _('Empty selects all nodes; e.g. subtag(mysub), name(keyword: x)')),
 				row(_('Fallback group'), w.groupFinal, _('Used when no node survives the health check')),
 				row(_('Additional groups'), w.groupExtra, _('Extra "name { filter/policy/final }" blocks, kept verbatim'))
@@ -480,6 +484,8 @@ return service.View.extend({
 				gb.unshift('        filter: ' + val(w.groupFilter));
 			if (val(w.groupFinal))
 				gb.push('        final: ' + val(w.groupFinal));
+			if (w.groupInterrupt.checked)
+				gb.push('        interrupt_connections: true');
 			gl.push('    ' + val(w.groupName) + ' {\n' + gb.join('\n') + '\n    }');
 		}
 		for (const l of w.groupExtra.value.split('\n'))

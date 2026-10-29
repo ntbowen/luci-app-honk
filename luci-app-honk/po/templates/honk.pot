@@ -138,7 +138,7 @@ msgid "Policy"
 msgstr ""
 
 #: htdocs/luci-static/resources/view/honk/main.js
-msgid "fixed uses the first node; the others pick by latency or order"
+msgid "select is manual; urltest lowest latency; loadbalance rotates; fallback first alive; score by quality"
 msgstr ""
 
 #: htdocs/luci-static/resources/view/honk/main.js
@@ -607,4 +607,12 @@ msgstr ""
 
 #: htdocs/luci-static/resources/view/honk/main.js
 msgid "Google DNS"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Interrupt connections"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/honk/main.js
+msgid "Close existing connections when the selection changes"
 msgstr ""

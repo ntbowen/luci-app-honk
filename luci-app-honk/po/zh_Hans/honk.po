@@ -108,8 +108,8 @@ msgstr "名称"
 msgid "Policy"
 msgstr "策略"
 
-msgid "fixed uses the first node; the others pick by latency or order"
-msgstr "fixed 固定使用第一个节点；其余按延迟或顺序选择"
+msgid "select is manual; urltest lowest latency; loadbalance rotates; fallback first alive; score by quality"
+msgstr "select 手动选择；urltest 延迟最低；loadbalance 轮询；fallback 第一个存活；score 按质量评分"
 
 msgid "Filter"
 msgstr "过滤器"
